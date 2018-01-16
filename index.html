@@ -52,6 +52,7 @@
             </div>
         </div>
     </header>
+
     <!--HOME-->
     <div id="home" class="collapse show">
         <div class="card card-body bg-primary text-white py-5">
@@ -86,6 +87,67 @@
         </div>
     </div>
 
+    <!--RESUME-->
+    <div id="resume" class="collapse">
+        <div class="card card-body bg-success text-white py-5">
+            <h2>My Resume</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deserunt enim, illum ipsam necessitatibus
+                sit.</p>
+        </div>
+        <div class="card card-body py-5">
+            <h3>Where have I worked?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos expedita natus nulla recusandae
+                saepe vitae!</p>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Devmasters</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, eius!</p>
+                        <p class="p-2 mb-3 bg-dark text-white">
+                            Position: Full Stack Developer
+                        </p>
+                        <p class="p-2 mb-3 bg-dark text-white">
+                            Phone: 04 3212 3927
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <h6 class="text-muted">Dates: 2015-2018</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Web Company</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, eius!</p>
+                        <p class="p-2 mb-3 bg-dark text-white">
+                            Position: Font End Developer
+                        </p>
+                        <p class="p-2 mb-3 bg-dark text-white">
+                            Phone: 04 2633 8436
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <h6 class="text-muted">Dates: 2013-2015</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Apple</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, eius!</p>
+                        <p class="p-2 mb-3 bg-dark text-white">
+                            Position: Graduate Developer
+                        </p>
+                        <p class="p-2 mb-3 bg-dark text-white">
+                            Phone: 04 1763 2463
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <h6 class="text-muted">Dates: 2011-2013</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--FOOTER-->
     <footer id="main-footer" class="p-5 bg-dark text-white">
         <div class="row">
@@ -101,5 +163,10 @@
 <script src="src/js/popper.min.js"></script>
 <script src="src/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js"></script>
+<script>//close all the collapse before open one
+$('.port-item').click(function () {
+	$('.collapse').collapse('hide');
+})
+</script>
 </body>
 </html>
